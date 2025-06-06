@@ -7,3 +7,8 @@
   description: An analysis of Houston's 2012 minimum lot-size reduction and its impact on residential property values.
   link: /assets/files/thesis.pdf
   thumbnail: /assets/images/thesis-thumbnail.jpg
+
+- title: Indego Station Inflow/Outflow Map
+  description: Indego stations are either primarily trip destinations or origins. This map visualizes where Philadelphians bike to and from.
+  link: /assets/files/net_trips_map.pdf
+  thumbnail: /assets/images/net_trips_map.jpg
