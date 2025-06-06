@@ -1,0 +1,80 @@
+---
+layout: page
+title: Projects
+---
+
+<div class="project-list">
+  {% for project in site.data.projects %}
+    <div class="project-card">
+      {% if project.thumbnail %}
+        <img src="{{ project.thumbnail | relative_url }}" alt="{{ project.title }} thumbnail" class="project-thumbnail">
+      {% endif %}
+      <div class="project-info">
+        <h3>{{ project.title }}</h3>
+        <p>{{ project.description }}</p>
+        <a href="{{ project.link }}" target="_blank">View Project</a>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+<style>
+  .project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+    margin-top: 2em;
+    padding: 0 1em;
+  }
+
+  .project-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 1em;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .project-thumbnail {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    aspect-ratio: 5 / 3;
+    border-radius: 6px;
+    margin-bottom: 1em;
+  }
+
+  .project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    width: 100%;
+    text-align: left; 
+  }
+
+  .project-info h3 {
+    margin-top: 0;
+    font-size: 1.25em;
+  }
+
+  .project-info p {
+    font-size: 0.95em;
+    color: #444;
+    margin-bottom: 1.5em;
+  }
+
+  .project-info a {
+    align-self: center;
+    color: #007acc;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: auto;
+  }
+
+  .project-info a:hover {
+    text-decoration: underline;
+  }
+</style>

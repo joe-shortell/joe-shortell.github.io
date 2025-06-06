@@ -1,0 +1,12 @@
+title: My Portfolio
+description: A website showcasing my work
+baseurl: "" # keep it "" for GitHub Pages user site
+url: "https://joe-shortell.github.io/" # change this
+theme: minima
+plugins:
+  - jekyll-feed
+
+author:
+  name: Joe Shortell
+  email: "j3shortell@gmail.com"
+
